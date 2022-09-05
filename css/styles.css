@@ -280,6 +280,19 @@ body .list {
     
 }
 
+.list-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    border-color: var(--secondary-bgc);
+    border-radius: 4px;
+    background-color: var(--secondary-bgc);
+    
+
+}
+
 .features-list .item{
     width: 270px;
 }
@@ -293,6 +306,7 @@ body .list {
     line-height: 1.14;
     letter-spacing: var(--primary-letter-spacing);
     text-transform: uppercase;
+    padding-top: 30px;
 
     margin-bottom: 10px;
 }
@@ -325,6 +339,28 @@ body .list {
     background-color: var(--secondary-bgc);
 }
 
+.socials{
+    align-items: center;
+    padding-top: 16px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-bottom: 30px;
+    
+}
+   
+
+.social-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    gap: 10px;
+}
+
+.socials-item{
+    
+}
+
 .team-list {
     display: flex;
     text-align: center;
@@ -338,6 +374,7 @@ body .list {
     font-size: 16px;
     line-height: 19px;
     letter-spacing: var(--primary-letter-spacing);
+    list-style: none;
 }
 
 .team-list .item {
@@ -356,6 +393,28 @@ body .list {
 
 .about-team{
     padding: 30px;
+    width: 270px;
+}
+
+/*Постійні кліенти*/
+
+.clients{
+width: 1170px;
+height: 184px;
+}
+
+.client-list{
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+list-style: none;
+
+}
+
+.client-item{
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
 }
 
 /* Підвал */
@@ -508,6 +567,15 @@ body .list {
     line-height: 1.87;
     letter-spacing: var(--portfolio-primary-latter-spacing);
     margin-bottom: 4px;
+}
+
+
+.join-us{
+    display: flex;
+    
+    
+    justify-content: center;
+    align-items: center;
 }
 
 
