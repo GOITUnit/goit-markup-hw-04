@@ -87,6 +87,8 @@ body .list {
     /* outline: 1px solid black; */
 }
 
+
+
 /* логотип шапки */
 .logo {
     margin-right:93px;
@@ -203,7 +205,6 @@ body .list {
 /* герой */  
 .hero {
     background-color: var(--hero-footer-bgc);
-
     text-align: center;
 
     padding-top: 200px;
@@ -461,7 +462,17 @@ body .list {
 .client-item > a > svg {
     width:106px;
     height: 60px;
+    
 }
+
+.client-logos{
+    fill: var(--secondary-text-color);
+}
+
+.client-logos > a:hover .client-item{
+    fill:currentColor
+}
+
 /* Підвал */
 .footer {
     background-color: var(--hero-footer-bgc);
@@ -618,6 +629,10 @@ body .list {
    
 }
 
+.social-list-footer{
+    
+}
+
 .title-footer{
     color: var(--accent-color-white);
 }
@@ -638,11 +653,11 @@ body .list {
     background-color: var(--footer-link-color)
 }
 
-.social-icons-footer > a :hover{
-    background-color: #2196F3;
+.social-icons-footer > a :hover .social-icons-footers{
+    fill: #188CE8;
 }
 
-.socials-item > a:hover .social-icons-footer{
+.socials-item > a:hover .social-icons-footers{
     
 }
 
@@ -651,7 +666,5 @@ body .list {
 
 }
 
-.social-list-footer{
-    margin-bottom: ;
-}
+
 
