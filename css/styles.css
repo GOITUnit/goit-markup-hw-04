@@ -158,6 +158,11 @@ body .list {
     margin-left: auto;
 }
 
+.icons-styles{
+    margin-right: 10px;
+    
+}
+
 
 .list-auth .item:not(:last-child) {
     margin-right: 50px;
@@ -357,8 +362,25 @@ body .list {
     gap: 10px;
 }
 
-.socials-item{
-    
+.socials-item > a{
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-icons{
+   fill:#AFB1B8;
+}
+
+.socials-item > a:hover {
+    background-color: #2196F3;
+}
+
+.socials-item > a:hover .social-icons{
+    fill: #fff;
 }
 
 .team-list {
@@ -397,30 +419,51 @@ body .list {
 }
 
 /*Постійні кліенти*/
-
 .clients{
-width: 1170px;
-height: 184px;
+    background-color: #FFFFFF;
+}
+/* .clients-container{
+    width: 1170px;
+    height: 184px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+.clients-container{
+    width: 1170px;
+    padding: 94px 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.clients-container > h2{
+    text-align: center;
 }
 
 .client-list{
-display: flex;
-align-items: center;
-justify-content: space-evenly;
-list-style: none;
-
+    margin-top:50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
 }
 
-.client-item{
+.client-item > a{
     width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-
+.client-item > a > svg {
+    width:106px;
+    height: 60px;
+}
 /* Підвал */
 .footer {
     background-color: var(--hero-footer-bgc);
-
     padding-top: 60px;
     padding-bottom: 60px;
 }
@@ -571,12 +614,41 @@ list-style: none;
 
 
 .join-us{
+   
+}
+
+.title-footer{
+    color: var(--accent-color-white);
+}
+
+.display-flex-start{
     display: flex;
-    
-    
-    justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 
 
+.social-icons-footer >a {
+    width: 44px;
+    height: 44px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+.social-icons-footer >a :hover{
+    background-color: var(--accent-color-blue);
+}
+
+.socials-item > a:hover .social-icons-footer{
+    fill:#fff;
+}
+
+.social-icons-footer{
+    fill:#fff;
+}
+
+.social-list-footer{
+    
+}
 
