@@ -24,6 +24,7 @@
     --hero-footer-bgc: #2F303A;
     --footer-link-color: rgba(255, 255, 255, 0.1);
     --bgc-btn-active: #188CE8;
+    --hero-bcg-color: #C4C4C4;
 
 /*     letter-spacing */
     --primary-letter-spacing: 0.03em;
@@ -204,9 +205,14 @@ body .list {
 
 /* герой */  
 .hero {
-    background-color: var(--hero-footer-bgc);
+    background-color: var(--hero-bcg-color);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../BCG/team.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     text-align: center;
-
+    max-width: 1600px;
+    height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
 }
@@ -454,7 +460,7 @@ body .list {
 .link-client{
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    
     display: flex;
     justify-content: center;
     align-items: center;
@@ -462,15 +468,16 @@ body .list {
     color: gray; 
 }
 
-.client-link:hover {
-    color: blue;
+.client-list .link-client:hover {
+    color: var(--accent-color-blue);
 }
 
 .client-logos{
     width:106px;
     height: 60px;
-    fill: currentColor
+    fill: currentColor;
 }
+
 
 
 
@@ -492,6 +499,8 @@ body .list {
 .adress-link{
     margin-bottom: 9px;
 }
+
+
 
 .address .link {
     color: var(--footer-link-color);
@@ -574,6 +583,20 @@ body .list {
     
 }
 
+.portfolio-link{
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+}
+
+.portfolio-link :hover{
+    border: 1px solid #EEEEEE;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
+}
+
+
 .portfolio-list {
     display: flex;
     flex-wrap: wrap;
@@ -636,6 +659,7 @@ body .list {
 
 .title-footer{
     color: var(--accent-color-white);
+    margin-bottom: 20px;
 }
 
 .display-flex-start{
@@ -644,7 +668,7 @@ body .list {
 }
 
 
-.social-icons-footer > a {
+.footers-ikon-links{
     width: 44px;
     height: 44px;
     display: flex;
@@ -654,18 +678,16 @@ body .list {
     background-color: var(--footer-link-color)
 }
 
-.social-icons-footer > a :hover .social-icons-footers{
-    fill: #188CE8;
-}
-
-.socials-item > a:hover .social-icons-footers{
-    
+.footers-ikon-links:hover{
+    background-color: #188CE8;
+    fill: #FFFFFF;
 }
 
 .social-icons-footers{
-    fill:#FFFFFF;
+    fill: #FFFFFF;
 
 }
+
 
 
 
