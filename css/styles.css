@@ -22,7 +22,7 @@
     --primary-bgc: #FFFFFF;
     --secondary-bgc: #F5F4FA;
     --hero-footer-bgc: #2F303A;
-    --footer-link-color: rgba(255, 255, 255, 0.6);
+    --footer-link-color: rgba(255, 255, 255, 0.1);
     --bgc-btn-active: #188CE8;
 
 /*     letter-spacing */
@@ -194,6 +194,7 @@ body .list {
 /* hover, focus for header */
 .page-header .link:hover,
 .page-header .link:focus {
+    fill: var(--accent-color-blue);
     color: var(--accent-color-blue);
 }
 
@@ -627,28 +628,30 @@ body .list {
 }
 
 
-.social-icons-footer >a {
+.social-icons-footer > a {
     width: 44px;
     height: 44px;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
+    background-color: var(--footer-link-color)
 }
 
-.social-icons-footer >a :hover{
-    background-color: var(--accent-color-blue);
+.social-icons-footer > a :hover{
+    background-color: #2196F3;
 }
 
 .socials-item > a:hover .social-icons-footer{
-    fill:#fff;
+    
 }
 
-.social-icons-footer{
-    fill:#fff;
+.social-icons-footers{
+    fill:#FFFFFF;
+
 }
 
 .social-list-footer{
-    
+    margin-bottom: ;
 }
 
