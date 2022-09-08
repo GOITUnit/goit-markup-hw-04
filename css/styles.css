@@ -163,6 +163,7 @@ body .list {
 
 .icons-styles{
     margin-right: 10px;
+    fill: currentColor;
     
 }
 
@@ -215,6 +216,8 @@ body .list {
     height: 600px;
     padding-top: 200px;
     padding-bottom: 200px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .hero-title {
