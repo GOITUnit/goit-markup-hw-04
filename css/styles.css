@@ -1,10 +1,10 @@
+*,
+::after,
+::before {
+ box-sizing: border-box;
 
-/*Додае вміст(стилі) до та після елемента до якого були застосовані*/
-::before,
-::after {
-  box-sizing: border-box;
-  /* задае точні розміри для верстки в СSS */
 }
+  
 
 :root {
 /*     text (додав зміни)*/
@@ -574,6 +574,15 @@ body .list {
 }
 
 /* списки карток */
+
+
+
+.portfolio-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-top: 50px;
+}
 /* .portfolio-list .title {
     color: var(--primary-text-color);
 
@@ -638,27 +647,29 @@ body .list {
     border-right: 1px solid rgba(75, 75, 75, 0.1);
     border-bottom: 1px solid rgba(75, 75, 75, 0.1);
     /* border: 1px solid rgba(75, 75, 75, 0.1); */
-} */
+ */
 
 /* .under-picture {
     /* border-top: 0; 
 } */
 
 
-.portfolio-list.list {
+/* .portfolio-list.list {
     display: flex;
     flex-wrap: wrap;
     gap: 30px;
-}
+} */
+
+
     
     .portfolio-item {
-    width: 370px;
+    max-width:370px;
     }
     
     .portfolio-link {
     display: block;
-    width: 100%;
-    height: 100%;
+    max-width: 370px;
+    max-height: 404px;
     text-decoration: none;
     }
     
@@ -681,13 +692,8 @@ body .list {
     
     margin-bottom: 4px;
     }
-    
-    .projects-list .title {
-    color: ;
-    font-size: 16px;
-    line-height: 30px;
-    letter-spacing: 0.03em;
-    }
+
+
 
 
 
